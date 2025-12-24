@@ -1,0 +1,24 @@
+# Manifest file for source distribution
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+include pyproject.toml
+
+# Include documentation
+recursive-include docs *.md
+
+# Include examples
+recursive-include examples *.py
+
+# Include tests
+recursive-include tests *.py
+
+# Exclude build artifacts and caches
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .pytest_cache
+global-exclude .mypy_cache
+global-exclude .ruff_cache
+global-exclude *.so
+global-exclude *.egg-info
