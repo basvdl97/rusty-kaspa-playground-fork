@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include pyproject.toml
+recursive-include kaspa_sdk *.py
+recursive-include docs *.md
+recursive-include examples *.py
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .DS_Store
